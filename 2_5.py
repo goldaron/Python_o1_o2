@@ -18,4 +18,4 @@ g = grammat_total %1000
 print(grammat_total)
 
 #Tulos
-print(f"Tulos: {kg:.0f}kg {round(g)}g")
+print(f"Massa nykymittojen mukaan: {kg:.0f}kg {round(g)}g")
