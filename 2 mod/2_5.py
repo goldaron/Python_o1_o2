@@ -11,10 +11,10 @@ luodit = float(input("Anna luodit: "))
 
 #Muunnetaan leiviskät nauloiksi ja naulat luodeista grammoiksi
 naulat_total = (leiviskä * 20) + naulat
-luodit_total = naulat_total * 32
+luodit_total = (naulat_total * 32) + luodit
 grammat_total = luodit_total * 13.3
-kg = grammat_total //1000
-g = grammat_total %1000
+kg = grammat_total // 1000
+g = grammat_total % 1000
 print(grammat_total)
 
 #Tulos

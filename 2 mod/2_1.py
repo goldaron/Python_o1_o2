@@ -1,3 +1,3 @@
 #Ohjelma joka tervehtii sinua omalla nimelläsi
-username = input('anna nimesi: ')
+username = input("Anna nimesi: ")
 print("Terve, " + username + "!")

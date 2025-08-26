@@ -10,13 +10,10 @@ stop3 = 9
 start4 = 1
 stop4 = 6
 
+koodi1 = str(random.randint(start3, stop3)) + str(random.randint(start3, stop3)) + str(random.randint(start3, stop3))
+koodi2 = str(random.randint(start4, stop4)) + str(random.randint(start4, stop4)) + str(random.randint(start4, stop4)) + str(random.randint(start4, stop4))
+
 #Tulostetaan koodit loopilla
-print("Kolminumeroinen koodi on:")
-for i in range(3):
-    print(random.randint(start3, stop3))
-
+print(f"Kolminumeroinen koodi on: {koodi1}")
 print("\n") #Riviväli vaan koska voi
-
-print("Nelinumeroinen koodi on:")
-for i in range(4):
-    print(random.randint(start4, stop4))
+print(f"Nelinumeroinen koodi on: {koodi2}")
