@@ -4,8 +4,8 @@
 
 fish = float(input("Anna kuhan mitta sentteinä: "))
 
-if fish<=37:
+if fish < 37:
     erotus = 37-fish
     print(f"Kuha on alamittainen, mittaa puuttuu {erotus:.0f}cm")
-if fish>=37:
+if fish > 37:
     print("Kuha on yli alamitan, hieno vonkale!")
