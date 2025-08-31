@@ -7,10 +7,11 @@ cities = []
 
 for i in range(5):
     # Pyydetään antamaan kaupungin nimi
-    city = input(f"Anna kaupungin nimi: ")
+    city = input("Anna kaupungin nimi: ")
     cities.append(city)
     i += 1
 
+#Tulostetaan kaupungit järjestyksessä
 print("Syötetyt kaupungit: ")
 for city in cities:
     print(city)

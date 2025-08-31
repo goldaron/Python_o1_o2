@@ -11,7 +11,7 @@ password = "rules"
 while tries < 5:
     userinput = input("Anna käyttäjätunnus: ")
     if userinput == username:
-        userpw = input("Anna salasana: ") #Ei näin nyt oikeesti kysytä..
+        userpw = input("Anna salasana: ") #Ei näin nyt oikeesti kysytä
         if userpw == password:
             print("Tervetuloa! (●'◡'●)")
             break
