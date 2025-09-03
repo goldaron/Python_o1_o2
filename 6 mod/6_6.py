@@ -12,9 +12,9 @@ def is_it_worth(halkaisija, hinta):
     worth = hinta / ala # neliöhinta saadaan jakamalla hinta pinta-alalla.
     return worth
 
-koko1 = float(input("Anna pizzan koko sentteinä: "))
+koko1 = float(input("Anna pizzan halkaisija sentteinä: "))
 hinta1 = float(input("Anna pizzan hinta euroina: "))
-koko2 = float(input("Anna pizzan koko sentteinä: "))
+koko2 = float(input("Anna pizzan halkaisija sentteinä: "))
 hinta2 = float(input("Anna pizzan hinta euroina: "))
 
 vastine1 = is_it_worth(koko1, hinta1)
