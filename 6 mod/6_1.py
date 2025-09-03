@@ -1,5 +1,6 @@
 # Kirjoita parametriton funktio, joka palauttaa paluuarvonaan satunnaisen nopan silmäluvun väliltä 1..6.
-# Kirjoita pääohjelma, joka heittää noppaa niin kauan kunnes tulee kuutonen. Pääohjelma tulostaa kunkin heiton jälkeen saadun silmäluvun.
+# Kirjoita pääohjelma, joka heittää noppaa niin kauan kunnes tulee kuutonen.
+# Pääohjelma tulostaa kunkin heiton jälkeen saadun silmäluvun.
 
 import random
 
@@ -8,21 +9,16 @@ def heita_noppaa():
     # Generoidaan satunnainen kokonaisluku väliltä 1 ja 6
     return random.randint(1, 6)
 
-def paaohjelma():
-    """Heittää noppaa, kunnes saadaan kuutonen, ja tulostaa jokaisen heiton."""
-    while True:
+while True:
 
-        # Kutsutaan heita_noppaa-funktiota ja tallennetaan tulos muuttujaan
-        silmaluku = heita_noppaa()
+    # Kutsutaan heita_noppaa-funktiota ja tallennetaan tulos muuttujaan
+    silmaluku = heita_noppaa()
 
-        # Tulostetaan heiton tulos
-        print(f"Heiton tulos: {silmaluku}")
+    # Tulostetaan heiton tulos
+    print(f"Heiton tulos: {silmaluku}")
 
-        # Tarkistetaan, onko saatu silmäluku kuutonen
-        if silmaluku == 6:
-            # Jos saatiin kuutonen, tulostetaan viesti ja lopetetaan silmukka
-            print("Kuutonen saatu, ohjelma päättyy.")
-            break
-
-# Suoritetaan pääohjelma
-paaohjelma()
+    # Tarkistetaan, onko saatu silmäluku kuutonen
+    if silmaluku == 6:
+        # Jos saatiin kuutonen, tulostetaan viesti ja lopetetaan silmukka
+        print("Kuutonen saatu, ohjelma päättyy.")
+        break
