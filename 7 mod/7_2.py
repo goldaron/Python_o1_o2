@@ -10,7 +10,6 @@ while True:
 
     if nimi == "":
         break  # Lopetetaan, jos syöte on tyhjä
-
     if nimi in nimet:
         print("Aiemmin syötetty nimi")
     else:

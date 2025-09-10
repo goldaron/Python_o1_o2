@@ -6,13 +6,13 @@
 # Käyttäjä saa valita uuden toiminnon miten monta kertaa tahansa aina siihen asti, kunnes hän haluaa lopettaa.
 # (ICAO-koodi on lentoaseman yksilöivä tunniste. Esimerkiksi Helsinki-Vantaan lentoaseman ICAO-koodi on EFHK.)
 
-lentoasemat = {
+lentoasemat = { # Sanakirja lentoasemien tallentamiseen muutamalla lentokentällä
         "EFHK": "Helsinki-Vantaa",
         "EHAM": "Amsterdam Schiphol",
         "KJFK": "John F. Kennedy International",
         "EGLL": "London Heathrow",
         "LFPG": "Charles de Gaulle",
-    } # Sanakirja lentoasemien tallentamiseen muutamalla lentokentällä
+    }
 
 while True:
     print("\nValitse toiminto:")
@@ -24,7 +24,7 @@ while True:
     if valinta == "1": #Lisätään uusi lentoasema, formatoidaan käyttäjän syöte
         icao = input("Anna lentoaseman ICAO-koodi: ").strip().upper() # Format ICAO ISOIKSI kirjaimiksi
         nimi = input("Anna lentoaseman nimi: ").strip()
-        if icao in lentoasemat: #Jos kenttä on jo syötetty palautetaan sanakirjasta vastaus
+        if icao in lentoasemat:#Jos kenttä on jo syötetty palautetaan sanakirjasta vastaus
             print(f"Lentoasema {icao} on jo tallennettu nimellä {lentoasemat[icao]}.")
         else:
             lentoasemat[icao] = nimi #"ICAO": "Lentoaseman nimi"
