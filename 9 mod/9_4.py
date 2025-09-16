@@ -51,6 +51,6 @@ while kilpailu_kaynnissa:
             kilpailu_kaynnissa = False
 
 # Tulostetaan kilpailun tulokset
-print(f"{'RekNo':<10} {'Huiput':<15} {'Nopeus':<10} {'Kuljettu matka':<15}")
+print(f"{'RekNo':<10} {'Huiput':<10} {'Nopeus':<10} {'Kuljettu matka':<10}")
 for auto in autot:
-    print(f"{auto.rek:<10} {auto.maxspeed:<15} {auto.speed:<10} {auto.travel:<15}")
+    print(f"{auto.rek:<10} {auto.maxspeed:<10} {auto.speed:<10} {auto.travel:<10}")
