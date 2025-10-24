@@ -11,13 +11,16 @@ class Auto:
         self.speed = speed
         self.travel = travel
 
-auto1 = Auto("ABC-123", 142)
+cars = []
 
-cars = [auto1]
+auto1 = Auto("ABC-123", 142)
+cars.append(auto1)
+
 for car in cars:
-    carno = 0+1
+    carno = 1
     print(f"\nAuto {carno}"
           f"\nRekisterinumero: {car.rek}"
           f"\nHuippunopeus: {car.maxspeed} km/h"
           f"\nNopeus tällä hetkellä: {car.speed} km/h"
           f"\nKilometrejä mittarissa {car.travel} km")
+    carno += 1
