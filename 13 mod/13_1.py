@@ -11,19 +11,19 @@ def alkuluku(luku):
     try:
         luku = int(luku)
         if luku < 2:
-            is_prime = False
+            isPrime = False
         else:
-            is_prime = True
+            isPrime = True
             for i in range(2, int(luku**0.5) + 1):
                 if luku % i == 0:
-                    is_prime = False
+                    isPrime = False
                     break
 
         tilakoodi = 200
         vastaus = {
             "status": tilakoodi,
             "Number": luku,
-            "isPrime": is_prime
+            "isPrime": isPrime
         }
 
     except ValueError:
